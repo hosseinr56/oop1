@@ -6,7 +6,7 @@ public class student extends person {
     private int [] vahed = new int[100];
     private double [] nomre = new double[100];
 
-    public void addingstudent (int vahed, double nomre) {
+    public void adding (int vahed, double nomre) {
         this.vahed[index] = vahed;
         this.nomre[index] = nomre;
         this.index++;
