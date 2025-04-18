@@ -10,9 +10,10 @@ public class Main {
         System.out.println("تعداد جلسات رو وارد کنید");
         int jalase = sc.nextInt();
         System.out.println("حقوق هر جلسه رو وارد کنید");
-        double hogog = sc.nextDouble();
+        long hogog = sc.nextLong();
         Professor ps = new Professor(firsname, lastname,jalase,hogog);
         System.out.println("حقوق استاد "+ps.getFirstName()+" "+ ps.getLastName()+":"+ps.calculateSalary());
+        System.out.println("----------------------------------------------------------------");
         sc.nextLine();
         System.out.println("نام دانش آموز را وارد کنید");
         String firsname2 = sc.nextLine();
@@ -22,14 +23,14 @@ public class Main {
         System.out.println("تعداد درس هارو وارد کنید");
         int dars = sc.nextInt();
         for(int i=0;i<dars;i++){
-            System.out.println("تعداد واحد درس"+(i+1)+"وارد کنید");
+            System.out.println("تعداد واحد درس "+ (i+1) +" رو "+"وارد کنید");
             int vahed= sc.nextInt();
-            System.out.println("نمره درس"+(i+1)+"وارد کنید");
+            System.out.println("نمره درس "+(i+1)+" رو "+"وارد کنید");
             double nomre = sc.nextDouble();
             st.adding(vahed,nomre);
             System.out.println("----------------------------------------------------------------");
         }
-        System.out.println("معدل دانشجو"+st.getFirstName()+" "+st.getLastName()+":"+st.average());
+        System.out.println("معدل دانشجو "+st.getFirstName()+" "+st.getLastName()+":"+st.average());
         sc.close();
     }
 }
